@@ -1,61 +1,129 @@
     <div class="container mt-4">
-         <header class="d-flex flex-wrap justify-content-center [y-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <span class="fs-4">{{ nama }} {{ nim }}</span>
-    </a>
-
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link active" aria-curretn="page">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link ">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link ">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link ">Faqs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link ">About</a></li>
-    </ul>
-  </header>
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-4">Tony Wijaya (011100862)</span>
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+        </header>
 
         <main class="mb-5">
-            <div class="d-flex flex-wrap mb-3">
-                <button type="button" class="btn btn-success m-1"><i class="fa-brands fa-whatsapp"></i> Kirim WhatsApp</button>
-                <button type="button" class="btn btn-primary m-1"><i class="fa-solid fa-plus"></i> Record Baru</button>
-                <button type="button" class="btn btn-danger m-1"><i class="fa-solid fa-trash"></i> Hapus Record</button>
-                <button type="button" class="btn btn-warning m-1"><i class="fa-solid fa-edit"></i> Ubah Record</button>
-                <button type="button" class="btn btn-info m-1"><i class="fa-solid fa-search"></i> Pencarian</button>
-                <button type="button" class="btn btn-secondary m-1"><i class="fa-solid fa-times"></i> Batal</button>
+            <div class="d-flex flex-wrap mb-3 align-items-center">
+                <button type="button" class="btn btn-success m-1"><i class="fa fa-whatsapp"></i> Kirim WhatsApp</button>
+                <button type="button" class="btn btn-primary m-1"><i class="fa fa-plus"></i> Record Baru</button>
+                <button type="button" class="btn btn-danger m-1"><i class="fa fa-trash"></i> Hapus Record</button>
+                <button type="button" class="btn btn-warning m-1"><i class="fa fa-edit"></i> Ubah Record</button>
+                <button type="button" class="btn btn-info m-1"><i class="fa fa-search"></i> Pencarian</button>
+                <button type="button" class="btn btn-link text-body-secondary m-1"><i class="fa fa-times"></i> Batal</button>
             </div>
-
             <hr>
 
-            <div class="row g-3 align-items-center">
-                <div class="col-12 col-sm-4">
+            <div class="row g-3 align-items-center mb-5">
+                <div class="col-12 col-md-4">
                     <input type="text" class="form-control" placeholder="Ini TextBox">
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-md-4">
                      <select class="form-select" aria-label="Jurusan">
                         <option selected value="SI">SI/SI</option>
                         <option value="TI">TI/TI</option>
                     </select>
                 </div>
-                <div class="col-12 col-sm-4">
+                <div class="col-12 col-md-4">
                     <div class="dropdown">
                         <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Type to filter...
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="fas fa-circle text-success me-2 small"></i>Action
+                           <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fa fa-circle text-success me-2"></i>Action
                             </a></li>
                             <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="fas fa-circle text-primary me-2 small"></i>Another action
-                            </a></li>
-                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="fas fa-circle text-danger me-2 small"></i>Something else here
-                            </a></li>
-                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="fas fa-circle text-info me-2 small"></i>Separated link
+                                <i class="fa fa-circle text-primary me-2"></i>Another action
                             </a></li>
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <h3 class="mb-3">Data Mahasiswa</h3>
+            <div class="table-responsive mb-5">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col"><i class="fa fa-id-card-o me-2"></i>NIM</th>
+                            <th scope="col"><i class="fa fa-user me-2"></i>Nama Mahasiswa</th>
+                            <th scope="col"><i class="fa fa-graduation-cap me-2"></i>Program Studi</th>
+                            <th scope="col"><i class="fa fa-calendar me-2"></i>Angkatan</th>
+                            <th scope="col"><i class="fa fa-info-circle me-2"></i>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>011100862</td>
+                            <td>Lancelot</td>
+                            <td>Sistem Informasi</td>
+                            <td>2021</td>
+                            <td><i class="fa fa-check-circle text-success me-2"></i>Aktif</td>
+                        </tr>
+                        <tr>
+                            <td>011100863</td>
+                            <td>Arthuria Pendragon</td>
+                            <td>Teknik Informatika</td>
+                            <td>2021</td>
+                            <td><i class="fa fa-pause-circle text-warning me-2"></i>Cuti</td>
+                        </tr>
+                        <tr>
+                            <td>011100864</td>
+                            <td>Merlin</td>
+                            <td>Sistem Informasi</td>
+                            <td>2022</td>
+                            <td><i class="fa fa-check-circle text-success me-2"></i>Aktif</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="mb-3">Data Mahasiswa (Dark Mode)</h3>
+            <div class="table-responsive">
+                <table class="table table-dark table-striped table-bordered">
+                     <thead>
+                        <tr>
+                            <th scope="col"><i class="fa fa-id-card-o me-2"></i>NIM</th>
+                            <th scope="col"><i class="fa fa-user me-2"></i>Nama Mahasiswa</th>
+                            <th scope="col"><i class="fa fa-graduation-cap me-2"></i>Program Studi</th>
+                            <th scope="col"><i class="fa fa-calendar me-2"></i>Angkatan</th>
+                            <th scope="col"><i class="fa fa-info-circle me-2"></i>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>011100862</td>
+                            <td>Lancelot</td>
+                            <td>Sistem Informasi</td>
+                            <td>2021</td>
+                            <td><i class="fa fa-check-circle text-success me-2"></i>Aktif</td>
+                        </tr>
+                        <tr>
+                            <td>011100863</td>
+                            <td>Arthuria Pendragon</td>
+                            <td>Teknik Informatika</td>
+                            <td>2021</td>
+                            <td><i class="fa fa-pause-circle text-warning me-2"></i>Cuti</td>
+                        </tr>
+                        <tr>
+                            <td>011100864</td>
+                            <td>Merlin</td>
+                            <td>Sistem Informasi</td>
+                            <td>2022</td>
+                            <td><i class="fa fa-check-circle text-success me-2"></i>Aktif</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
     </div>
@@ -64,15 +132,15 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Konfirmasi Pilihan</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    This is a modal sheet, a variation of the modal component.
+                    Anda telah memilih sebuah filter. Apakah Anda ingin melanjutkan?
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Ya, Lanjutkan</button>
                 </div>
             </div>
         </div>
@@ -86,5 +154,5 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 text-primary">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-primary">About</a></li>
         </ul>
-        <p class="text-center text-black">&copy; 2025 STMIK PONTIANAK</p>
+        <p class="text-center text-body-secondary">&copy; 2025 STMIK PONTIANAK</p>
     </footer>
