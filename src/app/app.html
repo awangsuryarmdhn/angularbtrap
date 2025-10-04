@@ -1,58 +1,90 @@
-<div class="container">
-  <header class="d-flex flex-wrap justify-content-center [y-3 mb-4 border-bottom">
+    <div class="container mt-4">
+         <header class="d-flex flex-wrap justify-content-center [y-3 mb-4 border-bottom">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
       <span class="fs-4">{{ nama }} {{ nim }}</span>
     </a>
 
     <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link active" aria-curretn="page">Home</a>/li>
-      <li class="nav-item"><a href="#" class="nav-link ">Features</a>/li>
-      <li class="nav-item"><a href="#" class="nav-link ">Pricing</a>/li>
-      <li class="nav-item"><a href="#" class="nav-link ">Faqs</a>/li>
-      <li class="nav-item"><a href="#" class="nav-link ">About</a>/li>
+      <li class="nav-item"><a href="#" class="nav-link active" aria-curretn="page">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link ">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link ">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link ">Faqs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link ">About</a></li>
     </ul>
   </header>
-    <div>
 
-<div class="b-example-divider"></div>
+        <main class="mb-5">
+            <div class="d-flex flex-wrap mb-3">
+                <button type="button" class="btn btn-success m-1"><i class="fa-brands fa-whatsapp"></i> Kirim WhatsApp</button>
+                <button type="button" class="btn btn-primary m-1"><i class="fa-solid fa-plus"></i> Record Baru</button>
+                <button type="button" class="btn btn-danger m-1"><i class="fa-solid fa-trash"></i> Hapus Record</button>
+                <button type="button" class="btn btn-warning m-1"><i class="fa-solid fa-edit"></i> Ubah Record</button>
+                <button type="button" class="btn btn-info m-1"><i class="fa-solid fa-search"></i> Pencarian</button>
+                <button type="button" class="btn btn-secondary m-1"><i class="fa-solid fa-times"></i> Batal</button>
+            </div>
 
-<div class="container">
-  <div class="row mx-2">
-    <div class="col-12">
-      <button class="btn btn-success m-1">
-        <i class="fa fa-whatsapp">
-          kirim Whatsapp
-        </i>
-      </button>
-      <button class="btn btn-primary m-1">
-        <i class="fa fa-plus">
-          new Record
-        </i>
-      </button>
-      <button class="btn btn-warning m-1">
-        <i class="fa fa-edit">
-          Ubah Record
-        </i>
-      </button>
-      <button class="btn btn-info mx-1">
-        <i class="fa fa-search">
-          Pencarian
-        </i>
-      </button>
-      <button class="btn btn-default mx-1">
-        <i class="fa fa-times">
-          batal
-        </i>
-      </button>
+            <hr>
+
+            <div class="row g-3 align-items-center">
+                <div class="col-12 col-sm-4">
+                    <input type="text" class="form-control" placeholder="Ini TextBox">
+                </div>
+                <div class="col-12 col-sm-4">
+                     <select class="form-select" aria-label="Jurusan">
+                        <option selected value="SI">SI/SI</option>
+                        <option value="TI">TI/TI</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Type to filter...
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fas fa-circle text-success me-2 small"></i>Action
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fas fa-circle text-primary me-2 small"></i>Another action
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fas fa-circle text-danger me-2 small"></i>Something else here
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fas fa-circle text-info me-2 small"></i>Separated link
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-    <div class="col-12">
-      <input type="text" class="form-control m-1" placeholder="ini textbox" />
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is a modal sheet, a variation of the modal component.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-12">
-      <select class="form-control m-1">
-        <option value="SI/SI">SI/SI</option>
-        <option value="TI/TI">TI/TI</option>
-      </select>
-    </div>
-  </div>
-</div>
+    
+    <footer class="container mt-auto">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-primary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-primary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-primary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-primary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-primary">About</a></li>
+        </ul>
+        <p class="text-center text-black">&copy; 2025 STMIK PONTIANAK</p>
+    </footer>
